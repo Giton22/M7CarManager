@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="SocialLoginWindows\Buttons\facebook.png" />
+    <None Remove="SocialLoginWindows\Buttons\google.png" />
+    <None Remove="SocialLoginWindows\Buttons\microsoft.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="SocialLoginWindows\Buttons\facebook.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SocialLoginWindows\Buttons\google.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SocialLoginWindows\Buttons\microsoft.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.9" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="6.0.9" />
+	<PackageReference Include="Microsoft.Identity.Client" Version="4.47.1" />
+    <PackageReference Include="MimeMapping" Version="1.0.1.37" />
+  </ItemGroup>
+
+</Project>
